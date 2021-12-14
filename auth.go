@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
-func getAuth(ctx context.Context, client *ethclient.Client, pvk string) (auth *bind.TransactOpts, err error) {
+func GetAuth(ctx context.Context, client *ethclient.Client, pvk string, limit uint64) (auth *bind.TransactOpts, err error) {
 	privateKey, err := crypto.HexToECDSA(pvk)
 	if err != nil {
 		return nil, err
@@ -35,5 +35,6 @@ func getAuth(ctx context.Context, client *ethclient.Client, pvk string) (auth *b
 	auth.Nonce = big.NewInt(int64(nonce))
 	auth.Value = big.NewInt(0)
 	auth.GasPrice = gasPrice
+	auth.GasLimit = limit
 	return auth, nil
 }

@@ -9,12 +9,7 @@ import (
 	"math/big"
 )
 
-func DeployErc721(ctx context.Context, client *ethclient.Client, tokenName, tokenSymbol, pvk string, limit uint64) (contractAddress, hash string, err error) {
-	auth, err := getAuth(ctx, client, pvk)
-	if err != nil {
-		return "", "", err
-	}
-	auth.GasLimit = limit
+func DeployErc721(client *ethclient.Client, auth *bind.TransactOpts, tokenName, tokenSymbol string) (contractAddress, hash string, err error) {
 	address, tx, _, err := erc721.DeployErc721(auth, client, tokenName, tokenSymbol)
 	if err != nil {
 		return "", "", err
@@ -24,12 +19,7 @@ func DeployErc721(ctx context.Context, client *ethclient.Client, tokenName, toke
 	return
 }
 
-func AwardItemErc721(ctx context.Context, client *ethclient.Client, contractAddress, fromAddress, cid, pvk string, limit uint64) (hash string, tokenId *big.Int, err error) {
-	auth, err := getAuth(ctx, client, pvk)
-	if err != nil {
-		return "", nil, err
-	}
-	auth.GasLimit = limit
+func AwardItemErc721(client *ethclient.Client, auth *bind.TransactOpts, contractAddress, fromAddress, cid string) (hash string, tokenId *big.Int, err error) {
 	nft, err := erc721.NewErc721(common.HexToAddress(contractAddress), client)
 	if err != nil {
 		return "", nil, err
