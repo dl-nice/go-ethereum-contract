@@ -51,7 +51,7 @@ func AwardItemErc721(ctx context.Context, client *ethclient.Client, contractAddr
 func TokenURIErc721(client *ethclient.Client, contractAddress, fromAddress string, tokenId *big.Int) (string, error) {
 	nft, err := erc721.NewErc721(common.HexToAddress(contractAddress), client)
 	if err != nil {
-		return "", nil
+
 	}
 	return nft.TokenURI(&bind.CallOpts{From: common.HexToAddress(fromAddress)}, tokenId)
 }
