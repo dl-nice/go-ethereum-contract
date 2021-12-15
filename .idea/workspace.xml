@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8342343-1f72-41ca-bcde-a491e49fd2c9" name="Default Changelist" comment="contract">
-      <change afterPath="$PROJECT_DIR$/tx.go" afterDir="false" />
+    <list default="true" id="b8342343-1f72-41ca-bcde-a491e49fd2c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/address.go" beforeDir="false" afterPath="$PROJECT_DIR$/addr.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contract/erc20/erc20.go" beforeDir="false" afterPath="$PROJECT_DIR$/contract/erc20/erc20.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erc20.go" beforeDir="false" afterPath="$PROJECT_DIR$/erc20.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/erc721.go" beforeDir="false" afterPath="$PROJECT_DIR$/erc721.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipfs.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +61,19 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="contract" />
     <MESSAGE value="return" />
-    <option name="LAST_COMMIT_MESSAGE" value="return" />
+    <MESSAGE value="contract" />
+    <option name="LAST_COMMIT_MESSAGE" value="contract" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="153" key="CommitChangelistDialog2" timestamp="1639478786299">
+    <state x="554" y="153" key="CommitChangelistDialog2" timestamp="1639483141288">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="554" y="153" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1639478786299" />
+    <state x="554" y="153" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1639483141288" />
     <state x="548" y="301" key="IDE.errors.dialog" timestamp="1639475028722">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

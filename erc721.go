@@ -1,7 +1,6 @@
 package shell
 
 import (
-	"context"
 	"github.com/dl-nice/go-ethereum-contract/contract/erc721"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
